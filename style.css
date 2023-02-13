@@ -1,0 +1,167 @@
+html {
+    width: 100%;
+    height: 100%
+}
+body {
+    padding-bottom: 20px;
+}
+.parentDiv {
+    display: flex;
+    width: 100%;
+}
+
+.childDiv {
+    width: 33%;
+    border: 1px solid black;
+    margin-right: 10px;
+    display: flex;
+    flex-flow: wrap;
+    background-color: grey;
+    color: black;
+    font-weight: 500;
+}
+
+.fName {
+    width: 100%;
+    float: right;
+    text-align: end;
+}
+
+
+.fNameText {
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: pink;
+}
+.fNameSecondText {
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: red;
+    color: white;
+}
+.fNameThirdText{
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: yellow;
+}
+
+.fNameContent {
+    width: 100%;
+    padding: 20px;
+}
+.collapse:not(.show) {
+    display: block !important;
+}
+div#navbarSupportedContent {
+    overflow-y:hidden !important;
+}
+.c-title {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 0px 0px 0px;
+}
+.collapse:not(.show){
+    display: none !important;
+} 
+
+/* Extra small devices to small */
+@media only screen and (min-width: 320px)  and (max-width: 767px) {
+    .parentDiv {
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
+    }
+    .childDiv {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: wrap;
+        margin-top:10px;
+        margin-left: 10px;
+        background-color: grey;
+        color: black;
+        font-weight: 500;
+    }
+    .childDiv:first-child {
+        margin-right: 10px;
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: wrap;
+        margin-top:10px;
+        background-color: grey;
+        color: black;
+        font-weight: 500;
+    }
+    .childDiv:last-child {
+        width:100%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: wrap;
+        margin-top:22px;
+        background-color: grey;
+        color: black;
+        font-weight: 500;
+    }
+    #collapsibleNavbar {
+        background-color: white;
+        /* display: none; */
+    }
+    li {
+        border-bottom: 2px solid black;
+    }
+    .nav-link {
+        color: #000000 !important;
+    }
+    .navbar-brand {
+        font-weight: 500;
+    }
+    #collapsibleNavbar {
+        background-color: white;
+        /* display: block !important; */
+    }
+}
+@media only screen and (min-width: 576px) {
+    .navbar-expand-sm .navbar-collapse {
+        display: none !important;
+    }
+}
+/* Tablet Device */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .parentDiv {
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
+    }
+    .childDiv {
+        width: 47%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: wrap;
+        margin-top:10px;
+        margin-left: 10px;
+    }
+    .childDiv:first-child {
+        margin-right: 10px;
+        width: 47%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: wrap;
+        margin-top:10px;
+    }
+    .childDiv:last-child {
+        width:100%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: wrap;
+        margin-top:22px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
